@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+
+</head>
+<body>
+<nav><b id="navName"></b><div><a href="#projects">Projects</a><a href="#art">Art</a><a href="#about">Skills</a><a href="#experience">Experience</a><a href="#achievements">Achievements</a></div></nav>
+
+<header class="hero" id="home">
+  <div class="card" id="card">
+    <svg class="plus tl" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 0v12M0 6h12" stroke="currentColor" stroke-width="1.5"/></svg>
+    <svg class="plus tr" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 0v12M0 6h12" stroke="currentColor" stroke-width="1.5"/></svg>
+    <svg class="plus bl" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 0v12M0 6h12" stroke="currentColor" stroke-width="1.5"/></svg>
+    <svg class="plus br" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 0v12M0 6h12" stroke="currentColor" stroke-width="1.5"/></svg>
+    <div class="inner" id="field">
+      <canvas id="glitch" role="img" aria-label="Portfolio"></canvas>
+      <span class="hint" aria-hidden="true">[hover]</span>
+    </div>
+  </div>
+  <div class="intro"><h1 id="heroName"></h1><p id="heroRole"></p></div>
+</header>
+
+<section id="projects" aria-label="Projects">
+  <h2>Projects<small>Here are some of my current projects</small></h2>
+  <div class="stage" id="stage"><div class="book" id="book"></div></div>
+  <button class="filesbtn" id="filesBtn" type="button">Resume and files</button>
+</section>
+<section id="art" aria-label="Artwork">
+  <h2>Artworks<small>Click some of my artworks to view it :D</small></h2>
+  <div class="track" id="track"></div>
+</section>
+
+<main class="wrap">
+  <section id="about"><h2>About and skills</h2><div class="grid" id="aboutGrid"></div></section>
+  <section id="experience"><h2>Experience and education</h2><div class="grid" id="expGrid"></div></section>
+  <section id="achievements"><h2>Competitions and achievements</h2><div class="grid" id="achGrid"></div></section>
+  
+</main>
+<footer><span id="copy"></span><div id="social"></div></footer>
+
+<div id="viewer" role="dialog" aria-modal="true" aria-labelledby="vTitle" hidden>
+  <div class="vscrim" id="vScrim"></div>
+  <div class="vsheet" id="vSheet"></div>
+  <div class="vcard" id="vCard">
+    <button type="button" id="vBack">Return to book</button>
+    <article class="vbody" id="vBody"></article>
+  </div>
+</div>
+
+<dialog id="modal"><h3 id="mTitle"></h3><div class="meta" id="mMeta"></div><img id="mImg" alt=""><p id="mText"></p>
+  <div class="row"><span></span><button id="mClose">Close</button></div></dialog>
+
+
+</body>
+</html>
